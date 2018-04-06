@@ -27,9 +27,9 @@ int main(){
 void table::setGame(){
 	table *t = new table;
 	FILE * fp = fopen("array.txt", "r+");
+	int n;
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9; j++) {
-		    int n;
 		    fscanf(fp, "%d", &n);
 		    t->value[i][j] = n;
 		}
